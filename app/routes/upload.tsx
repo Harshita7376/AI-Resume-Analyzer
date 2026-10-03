@@ -1,7 +1,7 @@
 import React, {type FormEvent, useState} from 'react'
 import Navbar from "~/components/Navbar";
 import FileUploader from "~/components/FileUploader";
-import {useNavigate} from "react-router";
+import {Link, useNavigate} from "react-router";
 import {usePuterStore} from "~/lib/puter";
 import {convertPdfToImage} from "~/lib/pdf2img";
 import {generateUUID} from "~/lib/utils";
@@ -87,6 +87,12 @@ const upload = () => {
     return(
         <main className="bg-[url('/images/bg-main.svg')] bg-cover">
             <Navbar/>
+            <div className="mx-auto mt-4 w-full max-w-[1200px] px-4">
+                <Link to="/" className="back-button w-fit">
+                    <img src="/icons/back.svg" alt="" className="h-2.5 w-2.5"/>
+                    <span className="text-sm font-semibold text-gray-800">Back to Home</span>
+                </Link>
+            </div>
             <section className="main-section">
                 <div className="page-heading py-16">
                     <h1>Smart feedback for your dream job</h1>
