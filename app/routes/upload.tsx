@@ -15,7 +15,11 @@ const upload = () => {
     const [file, setFile] = useState<File |null>(null);
 
     const handleFileSelect = (file: File | null) =>{
-        setFile(file )
+        setFile(file);
+        if (!file) {
+            setIsProcesing(false);
+            setStatusText('');
+        }
     }
 
     const handleAnalyze = async ({ companyName, jobTitle, jobDescription, file } : { companyName: string, jobTitle: string, jobDescription: string, file: File })=> {

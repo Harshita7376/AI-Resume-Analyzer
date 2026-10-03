@@ -33,7 +33,10 @@ const Auth = () =>{
                         ): (
                                 <>
                                     {auth.isAuthenticated ? (
-                                        <button className="auth-button" onClick={auth.signOut}>
+                                        <button className="auth-button" onClick={async () => {
+                                            await auth.signOut();
+                                            navigate("/", { replace: true });
+                                        }}>
                                             <p>Log Out</p>
                                         </button>
                                     ):(
