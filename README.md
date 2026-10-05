@@ -1,87 +1,132 @@
-# Welcome to React Router!
+# Resumind – AI Resume Analyzer
 
-A modern, production-ready template for building full-stack React applications using React Router.
+Resumind is an AI-powered resume analysis web application that helps job seekers evaluate and improve their resumes based on ATS compatibility, content, skills, structure, tone, and job relevance.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+Users can upload their resume in PDF format, provide optional job details, and receive AI-generated feedback with scores and improvement suggestions.
 
-## Features
+## 🚀 Live Demo
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+🔗 **[View Resumind Live](https://ai-resume-analyzer-nine-rosy.vercel.app/)**
 
-## Getting Started
+## ✨ Features
 
-### Installation
+- 📄 Upload resume in PDF format
+- 🤖 AI-powered resume analysis
+- 📊 Overall resume score
+- 🎯 ATS compatibility score
+- 📝 Content and structure analysis
+- 💼 Skills analysis
+- ✨ Tone and style analysis
+- 🔍 Job-specific resume feedback
+- 📋 Detailed improvement suggestions
+- 🔐 User authentication with Puter
+- ☁️ Cloud-based resume storage
+- 🗂️ Resume history and previous analysis
+- 🧹 Storage and cleanup functionality
+- 📱 Responsive design for mobile, tablet, and desktop
 
-Install the dependencies:
+## 🛠️ Tech Stack
+
+### Frontend
+
+- React
+- TypeScript
+- React Router
+- Tailwind CSS
+- Vite
+
+### AI & Cloud
+
+- Puter.js
+- Claude Sonnet 4
+- Puter Authentication
+- Puter File Storage
+- Puter KV Storage
+
+### Development & Deployment
+
+- Git
+- GitHub
+- Vercel
+
+## ⚙️ How It Works
+
+1. User logs into Resumind.
+2. User uploads their resume in PDF format.
+3. User can optionally enter:
+   - Company Name
+   - Job Title
+   - Job Description
+4. The resume is uploaded to cloud storage.
+5. The AI analyzes the uploaded resume.
+6. Resumind generates scores for:
+   - ATS
+   - Tone & Style
+   - Content
+   - Structure
+   - Skills
+7. The user receives detailed feedback and improvement suggestions.
+8. Previous resume analyses can be viewed from the dashboard.
+
+## 📊 Resume Analysis
+
+Resumind evaluates resumes based on multiple factors:
+
+- ATS compatibility
+- Job relevance
+- Resume structure
+- Content quality
+- Skills
+- Tone and writing style
+- Overall resume quality
+
+If job details are provided, the analysis becomes more targeted toward the selected job.
+
+If job details are not provided, Resumind performs a general resume analysis based on the uploaded resume.
+
+## 🤖 AI-Powered Feedback
+
+The application uses AI to analyze the uploaded resume and provide structured feedback.
+
+The analysis includes:
+
+- Overall Score
+- ATS Score
+- Tone & Style Score
+- Content Score
+- Structure Score
+- Skills Score
+- Strengths
+- Areas for Improvement
+- Detailed Suggestions
+
+This helps users understand what is working well in their resume and what can be improved.
+
+## 📱 Responsive Design
+
+Resumind is designed to work across different screen sizes:
+
+- 📱 Mobile
+- 📲 Tablet
+- 💻 Laptop
+- 🖥️ Desktop
+
+The interface adapts to different screen sizes while maintaining the existing design and usability.
+
+## 🔐 Authentication & Storage
+
+Resumind uses Puter.js for:
+
+- User authentication
+- Resume file storage
+- Resume preview image storage
+- Key-value data storage
+
+This allows users to securely access and manage their resume analyses.
+
+## 🖥️ Run Locally
+
+### 1. Clone the repository
 
 ```bash
-npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+git clone https://github.com/Harshita7376/YOUR-REPOSITORY-NAME.git
