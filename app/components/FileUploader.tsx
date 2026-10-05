@@ -29,11 +29,11 @@ const FileUploader = ({onFileSelect}: FileUploaderProps) => {
             <div className="space-y-4 cursor-pointer">
 
                 {selectedFile ?(
-                    <div className="uploader-selected-file" onClick={(e) => e.stopPropagation()}>
-                        <img src="/images/pdf.png" alt="Upload" className="size-20"/>
-                        <div className="flex items-center space-x-3">
-                            <div>
-                                <p className="text-lg text-gray-700 font-medium truncate">
+                    <div className="uploader-selected-file max-sm:gap-2" onClick={(e) => e.stopPropagation()}>
+                        <img src="/images/pdf.png" alt="Upload" className="size-20 max-sm:size-12 shrink-0"/>
+                        <div className="flex items-center space-x-3 max-sm:min-w-0 max-sm:flex-1">
+                            <div className="max-sm:min-w-0 max-sm:w-full">
+                                <p className="text-lg max-sm:text-base text-gray-700 font-medium truncate max-sm:whitespace-normal max-sm:overflow-visible max-sm:break-all">
                                     {selectedFile.name}
                                 </p>
                                 <p className="text-sm text-gray-500">

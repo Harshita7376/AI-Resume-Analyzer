@@ -19,8 +19,8 @@ const Auth = () =>{
 
     return(
         <main className="bg-[url('/images/bg-auth.svg')] bg-cover min-h-screen flex items-center justify-center">
-            <div className="gradient-border shadow-lg">
-                <section className="flex flex-col gap-8 bg-white rounded-2xl p-10">
+            <div className="gradient-border max-sm:w-[calc(100%-2rem)] max-sm:p-3 shadow-lg">
+                <section className="flex flex-col gap-8 max-sm:gap-6 bg-white rounded-2xl p-10 max-sm:p-5">
                     <div className="flex flex-col items-center gap-2 text-center">
                         <h1>WELCOME</h1>
                         <h2>Login to continue your Job Journey</h2>

@@ -123,15 +123,15 @@ export default function WipeApp() {
 
     return (
         <main className="min-h-screen bg-gradient-to-b from-[#f4f5ff] via-[#f7f7ff] to-[#fce9ef] px-4 pb-12 pt-6 sm:px-8">
-            <nav className="mx-auto flex w-full max-w-[1240px] items-center justify-between rounded-full bg-white/90 px-5 py-3 shadow-sm sm:px-8">
+            <nav className="mx-auto flex w-full max-w-[1240px] items-center justify-between rounded-full bg-white/90 px-5 py-3 shadow-sm max-sm:flex-wrap max-sm:justify-center max-sm:gap-3 max-sm:rounded-2xl max-sm:px-4 sm:px-8">
                 <Link to="/" className="text-2xl font-bold text-gradient">RESUMIND</Link>
-                <div className="flex items-center gap-3">
-                    <Link to="/auth" className="rounded-xl border border-indigo-100 bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm transition hover:bg-indigo-50">Logout</Link>
-                    <Link to="/upload" className="primary-button w-fit px-6 text-center">Upload Resume</Link>
+                <div className="flex items-center gap-3 max-sm:w-full max-sm:flex-wrap max-sm:justify-center max-sm:gap-2">
+                    <Link to="/auth" className="rounded-xl border border-indigo-100 bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm transition hover:bg-indigo-50 max-sm:px-3">Logout</Link>
+                    <Link to="/upload" className="primary-button w-fit px-6 text-center max-sm:px-4">Upload Resume</Link>
                 </div>
             </nav>
 
-            <div className="mx-auto mt-8 w-full max-w-[1240px]">
+            <div className="mx-auto mt-8 w-full max-w-[1240px] max-sm:min-w-0">
                 <button
                     type="button"
                     className="mb-5 inline-flex items-center gap-2 rounded-xl border border-indigo-100 bg-white/80 px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm transition hover:bg-white"
@@ -147,7 +147,7 @@ export default function WipeApp() {
 
                 {error && <div role="alert" className="mb-5 rounded-2xl border border-rose-200 bg-rose-50 px-5 py-4 text-sm text-rose-800">{error}</div>}
 
-                <div className="grid items-start gap-6 lg:grid-cols-[minmax(0,1.65fr)_minmax(280px,0.85fr)]">
+                <div className="grid items-start gap-6 max-sm:min-w-0 lg:grid-cols-[minmax(0,1.65fr)_minmax(280px,0.85fr)]">
                     <div className="space-y-6">
                         <section className="rounded-3xl border border-white bg-white/90 p-5 shadow-[0_14px_45px_rgba(76,81,150,0.08)] sm:p-7">
                             <div className="flex flex-wrap items-start justify-between gap-4">
